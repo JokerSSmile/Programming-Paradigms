@@ -11,5 +11,7 @@ calcOdd2 = [x | x <- [1..20], odd  x]
 calcOdd3 = filter odd [1..20]
 
 calcFermT n = n * (n + 1) / 2
+fermListT n = map calcFermT [1..n]
 
 calcFermP n = (2 * n^3 + 3 * n^2 + n) / 6
+fermListP n = map calcFermP [1..n]
